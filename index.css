@@ -1,0 +1,349 @@
+:root{
+   --choicecolor:rgb(197, 13, 13);
+
+}
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+   font-family: sans-serif;
+}
+header{
+   height:98vh;
+   background:linear-gradient(to right,rgb(255, 255, 255) 50%, rgb(197, 13, 13) 50%);
+  
+   /* border-bottom: 50px solid rgb(197, 13, 13); */
+}
+.top-header-component{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 30px;;
+   
+}
+.logo>p{
+   font-size: 25px;
+   text-transform: capitalize;
+   font-weight: 800;
+   color: var(--choicecolor);
+   border-top:6px solid ;;
+   border-bottom:6px solid ;;
+   border-left:6px solid ;;
+   padding-left: 10px;;
+   border-radius: 5px;;
+}
+
+nav>ul>li{
+   float: left;
+  
+   font-size: 25px;
+   text-transform: capitalize;
+   font-weight: 800;
+   list-style-type: none;
+   margin-left: 17px;;
+}
+/* nav>ul>li>a:hover{
+   color:  ;
+} */
+nav>ul>li>a{
+   color:black;
+   text-decoration: none;;
+
+}
+.signup-login{
+   display: flex; 
+   justify-content: space-between;
+   
+   
+}
+.signup-login>p:last-child{
+    background-color: white;
+    font-size:15px;;
+    font-weight: 400;
+    padding: 10px;;
+    margin-left: 10px;;
+   text-align: center;
+   border-radius: 4px;;
+   height: 35px;;
+    width:90px;
+    box-shadow: 0px 0px 2px  black;
+}
+.signup-login>p:first-child{
+   background-color: rgb(3, 3, 3);
+   font-size:15px;;
+   font-weight: 400;
+   padding: 10px;;
+   margin-left: 5px;;
+  text-align: center;
+  border-radius: 4px;;
+  height: 35px;;
+   width:90px;
+   color: white;
+   
+   box-shadow: 0px 0px 5px  rgb(255, 255, 255);
+}
+.signup-login >p:first-child:active{
+   background-color: rgb(255, 251, 251);
+   color: rgb(7, 7, 7);
+  
+}
+.signup-login >p:last-child:active{
+   background-color: rgb(5, 5, 5);
+   color: rgb(255, 255, 255);
+   
+}
+.center-header-component{
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.inside{
+   
+   text-align: center;
+}
+.inside>h1{
+   text-transform: capitalize;
+   font-size: 40px;;
+   margin-bottom:10px;
+}
+.inside>p{
+   text-transform: capitalize;
+   font-size: 20px;;
+   margin-bottom:30px;
+  
+}
+.search{
+   display: flex;
+}
+.search>input{
+   width:400px;
+   height: 45px;;
+   outline: 0;
+   border:1px solid black;
+   border-radius: 10px;;
+   text-align: center;
+   box-shadow: 0px 0px 2px  black;
+  
+}
+.search>h1{
+   background-color: black;
+   text-align: center;
+   color: white;
+   width:100px;
+   margin-left: 5px;;
+   border-radius: 10px;;
+   box-shadow: 0px 0px 5px  rgb(255, 255, 255);
+}
+.search>h1:active{
+   background-color:white;
+   color: black;
+}
+.sidenav{
+   width:100%;
+   height: 60vh;
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+  background: white;
+   display: none;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   
+}
+.sidenav>ul{
+   position: absolute;
+   top:100px;
+   left:40px;
+   
+
+}
+.sidenav>ul>li{
+   margin-top: 10px;;
+   font-size: 15px;
+   text-transform: capitalize;
+   font-weight: 800;
+   list-style-type: none;
+   
+   
+}
+.sidenav>ul>li>a{
+   color:rgb(17, 17, 17);
+   text-decoration: none;;
+   
+}
+.hmenu{
+  width:50px;
+  
+  position: fixed;
+  top:30px;
+  right:20px;
+  z-index: 2;
+  display: none;
+  
+}
+.hmenu>img{
+max-width: 100%;
+height: 30px;
+/* border: 2px solid rgb(7, 7, 7);
+padding: 5px;; */
+}
+/* about us page................................................................... */
+#about{
+   height:100vh;
+   width:700px;
+   background:url(./images/405831-PDDWCZ-67.jpg);
+   background-attachment: scroll;
+   background-position: center;
+   background-size: cover;;
+   background-repeat: no-repeat;
+   margin: auto;
+}
+.about-heading{
+   color: rgb(0, 0, 0);
+   text-align: center;
+   text-transform: capitalize;
+   padding:20px;
+   font-weight: 900;
+}
+.about-img{
+   width:200px;
+   margin: auto;
+}
+.about-img>img{
+  max-width: 100%;
+}
+.about-para{
+   width:400px;
+   margin: auto;
+}
+.about-para>p{
+   max-width:100%;
+   color:rgb(5, 5, 5);
+   padding:20px;
+   
+}
+summary{
+   background-color: black;
+   color: white;
+   margin-top: 10px;;
+   padding: 20px;;
+   list-style-type: none;
+   position: relative;
+   transition: 1s;
+  
+}
+summary::after{
+   content: "+";
+   position: absolute;
+   right:30px;
+   font-size: 20px;;
+}
+details[open] summary::after{
+   transform:rotate(45deg);
+}
+details{
+   background-color: rgb(255, 255, 255);
+  
+}
+details>p{
+   padding: 20px;;
+   border-top: 2px solid red;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:945px){
+   .hmenu{
+      display: initial;
+      
+         top:30px;
+         left:15px;
+      
+   }
+   nav{
+      display: none;
+   }
+}
+@media screen and (max-width:549px){
+   .inside>h1{
+      font-size: 25px;;
+   }
+   .inside>p{
+      font-size: 13px;;
+   }
+   
+   .search>input{
+      width:270px;
+      height: 35px;;
+   }
+   .search>h1{
+      width:60px;
+      font-size: 25px;
+   }
+   .signup-login>p:last-child{
+      font-size:10px;;
+      height: 30px;;
+      width:60px;
+      
+  }
+  .signup-login>p:first-child{
+    
+     font-size:10px;;
+     height: 30px;;
+     width:60px;
+  }
+}
+@media screen and (max-width:400px){
+   .search{
+      display: inline;
+      
+   }
+   .search>h1{
+      margin:10px auto;
+      font-size: 20px;;
+      padding: 5px 20px;
+      
+   }
+   .top-header-component{
+      
+      justify-content: center;
+      
+      
+   }
+   .logo{
+      display: none;
+     
+   }
+   
+   
+}
